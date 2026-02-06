@@ -1,0 +1,27 @@
+package com.lpu.friday_test;
+
+public class Student{
+    String name;
+    double marksObtained;
+
+    static String collegeName = "LPU";
+    static final double MAX_MARKS = 100;
+
+    Student(String name, double marksObtained) {
+        this.name = name;
+        this.marksObtained = marksObtained;
+    }
+
+    public void printPercentage() {
+        double percentage = (marksObtained / MAX_MARKS) * 100;
+        System.out.printf("Percentage: %.2f%%\n", percentage);
+    }
+
+    public void displayDetails() {
+        System.out.println("Name: " + name);
+        System.out.println("College: " + collegeName);
+        System.out.println("Marks Obtained: " + marksObtained);
+        printPercentage();
+        System.out.println();
+    }
+}
