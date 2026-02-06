@@ -1,0 +1,22 @@
+package com.lpu.friday_test;
+
+import java.util.Scanner;
+
+public class Q2 {
+    public static void manipulateString(int n, String str) {
+        String result = "";
+        for (int i = 0; i < n; i++) {
+            result = result + str;
+        }
+        System.out.println(result.toUpperCase());
+        System.out.println(result.length());
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        sc.nextLine();
+        String str = sc.nextLine();
+
+        manipulateString(num, str);
+    }
+}
